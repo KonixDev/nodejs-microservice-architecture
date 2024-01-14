@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 
-const MovieSchema = new Schema(
+const MovieSchema = new mongoose.Schema(
   {
     plot: {
       type: "String",

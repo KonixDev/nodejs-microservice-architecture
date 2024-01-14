@@ -1,4 +1,5 @@
 const app = require("./app");
 const endpoints = require("./services/endpoints");
+const express = require("express");
 
-console.log("Hello from index.js");
+app.use(express.json());

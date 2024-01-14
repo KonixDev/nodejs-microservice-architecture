@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "service-users": "node --watch api-users/index.js",
+    "service-users": "node api-users/index.js",
     "service-movies": "node --watch api-movies/index.js",
-    "service-theathers": "node --watch api-theathers/index.js",
-    "service-comments": "node --watch api-comments/index.js",
-    "gateway-api": "node --watch api-gateway/index.js",
+    "service-theathers": "node api-theathers/index.js",
+    "service-comments": "node api-comments/index.js",
+    "gateway-api": "node api-gateway/index.js",
     "dev": "concurrently \"npm run gateway-api\" \"npm run service-movies\" \"npm run service-theathers\" \"npm run service-comments\" \"npm run service-users\"",
     "start": "npm run dev"
   },
