@@ -15,7 +15,7 @@ The application consists of the following microservices:
 
 All these services interact with a centralized **Shared Database**, ensuring data consistency and integrity across the application.
 
-![Microservices Architecture](assets/NODE-JS-MICROSERVICES.png)
+![Microservices Architecture](assets/node-js-microservices-cloudflare.png)
 
 ## Getting Started
 
