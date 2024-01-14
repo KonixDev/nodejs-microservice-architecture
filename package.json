@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-microservice-example",
+  "version": "1.0.0",
+  "description": "A Node js microservice architecture example. Made for practice it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch api-gateway/index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonixDev/nodejs-microservice-architecture.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "microservices",
+    "microservice"
+  ],
+  "author": "KonixDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KonixDev/nodejs-microservice-architecture/issues"
+  },
+  "homepage": "https://github.com/KonixDev/nodejs-microservice-architecture#readme",
+  "dependencies": {
+  }
+}
