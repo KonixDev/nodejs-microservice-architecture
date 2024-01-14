@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch api-gateway/index.js "
+    "service-users": "node --watch api-users/index.js",
+    "service-movies": "node --watch api-movies/index.js",
+    "service-theathers": "node --watch api-theathers/index.js",
+    "service-comments": "node --watch api-comments/index.js",
+    "gateway-api": "node --watch api-gateway/index.js",
+    "dev": "concurrently \"npm run gateway-api\" \"npm run service-movies\" \"npm run service-theathers\" \"npm run service-comments\" \"npm run service-users\"",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -24,5 +30,8 @@
   },
   "homepage": "https://github.com/KonixDev/nodejs-microservice-architecture#readme",
   "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
   }
 }
